@@ -1,0 +1,4 @@
+node_modules
+.tscache
+lib/**/*.js
+!lib/bootstrap.js

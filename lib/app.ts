@@ -8,8 +8,7 @@ import foo from 'lib/foo/foo';
 
 // to import whole module from node_modules use "import * as ... from '...'" - it's transpiled to "var ... = require('...');
 // importing default export via: import ... from '...' won't work because then '.default' is applied to all usages
-// of imported node_module. Otherwise "import { default as ... } from '...'" should be also working (if d.ts files
-// are compatibile to do so); Importing node_module which has named exports can be imported with
+// of imported node_module. Importing node_module which has named exports can be imported with
 // "import { namedExport1, namedExport2 } from '...'" etc.
 import * as chalk from 'chalk';
 console.log(chalk.bold.red('chalked'));
